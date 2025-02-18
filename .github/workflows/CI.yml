@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Run tests and generate coverage
-        run: npm test -- --code-coverage --browsers=ChromeHeadless
+        run: npm test -- --code-coverage --browsers=ChromeHeadless --watch=false
 
       - name: SonarCloud Scan
         run: npx sonar-scanner
